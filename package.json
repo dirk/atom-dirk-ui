@@ -1,0 +1,10 @@
+{
+  "name": "dirk-ui",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "Adaptation of the Spacegray Eighties theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
