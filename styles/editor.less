@@ -6,7 +6,7 @@
   to {background-color: null;}
 }
 
-.editor {
+atom-editor {
   // font-family: @font-family-code;
 
   &.mini {
@@ -21,7 +21,7 @@
     .selection .region { background-color: lighten(@input-background-color, 10%); }
   }
 
-  &.editor-colors.mini.is-focused {
+  &atom-text-editor::shadow.mini.is-focused {
     .selection .region { background-color: lighten(@app-background-color, 5%); }
     transition: background-color 0.1s
   }
@@ -34,11 +34,13 @@
 
 }
 
+.settings-view {background: @01 !important;}
+
 // Give the editors in the settings view some nice little borders and adjust
 // their sizings.
-.settings-view .editor.mini {
-  border: 1px solid @05;
-  font-size: inherit;
+.settings-view atom-text-editor {
+  // border: 1px solid @05;
+  font-size: @font-size;
 
   &.is-focused {border-color: @04;}
 

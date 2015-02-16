@@ -8,8 +8,8 @@
   }
 }
 
-.panes {
-  .pane {
+atom-pane-container {
+  atom-pane {
     background-color: @editor-background-color;
 
     .item-views .pane-item {
@@ -23,12 +23,12 @@
     }
   }
 
-  .pane-row > * {
+  atom-pane-axis.horizontal > * {
     border-right: 1px solid @pane-item-border-color;
     &:last-child { border-right: none; }
   }
 
-  .pane-column > * {
+  atom-pane-axis.vertical > * {
     border-bottom: 1px solid @pane-item-border-color;
     &:last-child { border-bottom: none; }
   }
